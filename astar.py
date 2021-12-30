@@ -36,7 +36,7 @@ def find_path(start, end, width, height, dims, diagonal_cost, adjacent_cost, WIN
     path = create_path(start, lowest_cost_node)
 
     Tk().wm_withdraw()
-    result = messagebox.askokcancel('Program Finished', ('The program finished, the shortest distance \n to the path is ' + str(lowest_cost_node.cost) + ' blocks away, \n would you like to re run the program?'))
+    result = messagebox.askokcancel(f'Shortest path costs {str(lowest_cost_node.cost)}\n Rerun path finder?')
     if result == True:
         main(width, height, dims, diagonal_cost, adjacent_cost)
     else:
