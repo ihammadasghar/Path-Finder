@@ -2,7 +2,7 @@ from gui import main
 
 WIDTH = 700
 HEIGHT = 700
-DIMS = (10, 10)
+DIMS = (50, 50)
 DIAGONAL_COST = 2.0
 ADJACENT_COST = 1.0
 
