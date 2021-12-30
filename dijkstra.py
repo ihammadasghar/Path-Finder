@@ -17,7 +17,7 @@ def find_path(start, end, width, height, dims, diagonal_cost, adjacent_cost, WIN
     lowest_cost_node = start
 
     while lowest_cost_node.cords != end.cords:
-        neighbours = get_neighbours(lowest_cost_node, dims, diagonal_cost, adjacent_cost, WIN)
+        neighbours = get_neighbours(lowest_cost_node, end, dims, diagonal_cost, adjacent_cost, WIN)
         for node in neighbours:
             priority.append(node)
         
