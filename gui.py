@@ -38,6 +38,7 @@ def main(width, height, dims, diagonal_cost, adjacent_cost):
 
         for event in ev:
             if event.type == pygame.QUIT:
+                pygame.display.quit()
                 pygame.quit()
             if pygame.mouse.get_pressed()[0]:
                 try:
@@ -103,9 +104,9 @@ def ask(win):
     global algorithm
     WIN = win
     window = Tk()
-    label = Label(window, text='Start(Row, Col): ')
+    label = Label(window, text='Start(Row(max 50), Col(max 50): ')
     startBox = Entry(window)
-    label1 = Label(window, text='End(Row, Col): ')
+    label1 = Label(window, text='End(Row(max 50), Col(max 50)): ')
     endBox = Entry(window)
     algorithm = StringVar(window, "Dijkstra")
     radio1 = Radiobutton(window,  text="Dijkstra", variable=algorithm, value="Dijkstra")
@@ -115,7 +116,9 @@ def ask(win):
     radio2.grid(row=3, column=2)
     radio1.grid(row=3, column=1)
     label1.grid(row=1, pady=3)
+    endBox.insert(0, 'e.g "50,49"')
     endBox.grid(row=1, column=1, pady=3)
+    startBox.insert(0, 'e.g "34,21"')
     startBox.grid(row=0, column=1, pady=3)
     label.grid(row=0, pady=3)
     window.update()
