@@ -1,6 +1,6 @@
 # Path-Finder
 Visualize the difference between different path finding algorithms
-
+## Instructions:
 1. Specify Start & End node
 2. Mouse drag - build walls around the nodes
 3. SPACEBAR - Begin search for path
