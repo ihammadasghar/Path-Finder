@@ -1,7 +1,7 @@
 import pygame
 from tkinter import messagebox
 from tkinter import *
-from node import create_path, get_neighbours
+from pathfinder.node import create_path, get_neighbours
 
 
 RED = (255, 0, 0)

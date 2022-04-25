@@ -1,6 +1,6 @@
-from algorithms import astar, dijkstra
+from pathfinder.algorithms import astar, dijkstra
 import pygame
-from node import node
+from pathfinder.node import node
 from tkinter import *
 
 
