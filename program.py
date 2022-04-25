@@ -2,4 +2,5 @@ from gui import main
 from settings import *
 
 
-main(WIDTH, HEIGHT, DIMS, DIAGONAL_COST, ADJACENT_COST)
+if __name__ == "__main__":
+    main(WIDTH, HEIGHT, DIMS, DIAGONAL_COST, ADJACENT_COST)
