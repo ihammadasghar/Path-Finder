@@ -3,6 +3,7 @@ from tkinter import messagebox
 from tkinter import *
 from node import create_path, get_neighbours
 
+
 RED = (255, 0, 0)
 YELLOW = (247, 224, 12)
 ORANGE = (245, 169, 29)
@@ -10,8 +11,10 @@ ORANGE = (245, 169, 29)
 
 def find_path(start, end, width, height, dims, diagonal_cost, adjacent_cost, WIN, main):
     print("Dijkstra in process...")
+
     end.show((255, 8, 127), 0)
     start.show((255, 8, 127), 0)
+
     priority = []
     start.visited = True
     lowest_cost_node = start
@@ -31,7 +34,9 @@ def find_path(start, end, width, height, dims, diagonal_cost, adjacent_cost, WIN
         priority.remove(lowest_cost_node)
 
     end.show((255, 8, 127), 0)
+
     print("Dijkstra completed.")
+    
     path = create_path(start, lowest_cost_node)
 
     Tk().wm_withdraw()

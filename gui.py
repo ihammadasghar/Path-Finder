@@ -25,10 +25,14 @@ def main(width, height, dims, diagonal_cost, adjacent_cost):
         for j in range(dims[1]):
             WIN[i][j].show(WHITE, 0)
             WIN[i][j].show(BLACK, 1)
+
     start, end, ALGORITHM = ask(WIN)
+
     pygame.init()
+
     start.show(RED, 0)
     end.show(RED, 0)
+    
     loop = True
     while loop:
         ev = pygame.event.get()
@@ -89,6 +93,7 @@ def onsubmit():
     ALGORITHM = algorithm.get()
     window.quit()
     window.destroy()
+
 
 def ask(win):
     global WIN 

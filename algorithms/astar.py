@@ -11,6 +11,7 @@ ORANGE = (245, 169, 29)
 
 def find_path(start, end, width, height, dims, diagonal_cost, adjacent_cost, WIN, main):
     print("A* in process...")
+
     end.show((255, 8, 127), 0)
     start.show((255, 8, 127), 0)
     priority = []
@@ -32,7 +33,9 @@ def find_path(start, end, width, height, dims, diagonal_cost, adjacent_cost, WIN
         priority.remove(lowest_cost_node)
 
     end.show((255, 8, 127), 0)
+
     print("A* completed.")
+    
     path = create_path(start, lowest_cost_node)
 
     Tk().wm_withdraw()

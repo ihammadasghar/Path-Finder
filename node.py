@@ -2,9 +2,11 @@ from pygame.draw import rect
 from pygame.display import update
 from math import sqrt
 
+
 RED = (255, 0, 0)
 YELLOW = (247, 224, 12)
 ORANGE = (245, 169, 29)
+
 
 class node:
     def __init__(self, cords, screen, w, h):
@@ -25,7 +27,8 @@ class node:
     def path(self, color, st):
         rect(self.screen, color, (self.cords[1] * self.width, self.cords[0] * self.height, self.width, self.height), st)
         update()
-    
+
+
 def create_path(start, end):
     print("creating path...")
     path = [start]
@@ -84,5 +87,4 @@ def get_neighbours(node, end, dims, diagonal_cost, adjacent_cost, WIN):
                     n.visited = True
                     n.previous = node
                     nodes.append(n)
-
     return nodes
