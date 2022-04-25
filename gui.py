@@ -4,10 +4,8 @@ from node import node
 from tkinter import *
 
 
-red = (255, 0, 0)
-green = (0, 255, 0)
-blue = (0, 0, 255)
-grey = (220, 220, 220)
+RED = (255, 0, 0)
+WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 
 
@@ -25,12 +23,12 @@ def main(width, height, dims, diagonal_cost, adjacent_cost):
     WIN = [[node((i, j), screen, w, h) for j in range(dims[1])] for i in range(dims[0])]
     for i in range(dims[0]):
         for j in range(dims[1]):
-            WIN[i][j].show((255, 255, 255), 0)
+            WIN[i][j].show(WHITE, 0)
             WIN[i][j].show(BLACK, 1)
     start, end, ALGORITHM = ask(WIN)
     pygame.init()
-    start.show(red, 0)
-    end.show(red, 0)
+    start.show(RED, 0)
+    end.show(RED, 0)
     loop = True
     while loop:
         ev = pygame.event.get()
