@@ -1,4 +1,4 @@
-from gui import main
+from pathfinder.gui import main
 from settings import *
 
 
