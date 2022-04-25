@@ -8,6 +8,7 @@ Visualize the difference between different path finding algorithms
 4. Activate it `venv\scripts\activate`
 5. Download requirements `pip install -r requirements.txt`
 6. Run Path Finder: `python program.py`
+
 NOTE: If the python/pip commands don't work for you try `python3` and `pip3` or `py` (python version issues)
  
 ## Instructions:
