@@ -1,5 +1,4 @@
-from dijkstra import find_path as dijkstra
-from astar import find_path as astar
+from algorithms import astar, dijkstra
 import pygame
 from node import node
 from tkinter import *
@@ -76,9 +75,9 @@ def run_algorithm(width, height, dims, diagonal_cost, adjacent_cost):
         
         pygame.display.update()
         if ALGORITHM == "Dijkstra":
-            dijkstra(start, end, width, height, dims, diagonal_cost, adjacent_cost, WIN, main)
+            dijkstra.find_path(start, end, width, height, dims, diagonal_cost, adjacent_cost, WIN, main)
         else:
-            astar(start, end, width, height, dims, diagonal_cost, adjacent_cost, WIN, main)
+            astar.find_path(start, end, width, height, dims, diagonal_cost, adjacent_cost, WIN, main)
 
 
 def onsubmit():
