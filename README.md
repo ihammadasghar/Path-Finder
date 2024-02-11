@@ -1,6 +1,8 @@
 # Path-Finder
 Visualize the difference between different path finding algorithms
 
+![screenshot](https://github.com/ihammadasghar/Path-Finder/blob/update-readme/screenshots/joint.png)
+
 ## Setting up:
 1. Clone it `git clone https://github.com/ihammadasghar/path-finder.git`
 2. `cd path-finder`
